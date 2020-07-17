@@ -1,0 +1,23 @@
+{
+  "name": "metrics-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prestart": "npm run build",
+    "build": "tsc",
+    "start": "PROJECT_ID=$PROJECT_ID node metrics-example.js",
+    "init": "tsc --init"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^14.0.14",
+    "typescript": "^3.9.5"
+  },
+  "dependencies": {
+    "@google-cloud/opentelemetry-cloud-monitoring-exporter": "^0.3.0",
+    "@opentelemetry/metrics": "^0.6.1"
+  }
+}
